@@ -8,8 +8,8 @@
 Instructions: Write a function that *always* returns the number 1.
 ===================== */
 
-var justOne = function() {
-};
+var justOne = function(x) {
+ return (1);};
 
 console.log('justOne success:', justOne() === 1);
 
@@ -17,7 +17,8 @@ console.log('justOne success:', justOne() === 1);
 Instructions: Write a function that returns true if a number is even.
 ===================== */
 
-var isEven = function() {
+var isEven = function(y) {
+  return (y%2 === 0);
 };
 
 console.log('isEven success:', isEven(2) === true && isEven(3) === false);
@@ -27,7 +28,8 @@ Instructions: Write a function that *always* returns false.
               Use functions "justOne" and "isEven" somehow in the definition.
 ===================== */
 
-var justFalse = function() {
+var justFalse = function(z) {
+  return()
 };
 
 console.log('justFalse success:', justFalse() === false);
@@ -60,7 +62,7 @@ var filterOutLessThan10 = function() {
 };
 
 var test = filterOutLessThan10([4, 11]).length === 1 && filterOutLessThan10([4, 11])[0] === 11;
-console.log('filterOutLessThan10 success:', test)
+console.log('filterOutLessThan10 success:', test);
 
 /* =====================
 Stretch goal — NOT required

@@ -41,8 +41,10 @@
 
 // FUNCTIONS
 
+      // there should be a coherant idea around grouping your function's logic
+      // functions describe an idea/thought about about your manipulation does
+      // start breaking things down into thoughts
       // f(x) = function(argument)
-      
 
       // you can have a function with multiple arguments
       // how might you simplify a loop? maybe with a multi-argument function.
@@ -60,9 +62,5 @@
         console.log(maybeThing);
       };
       // don't write code that passes "undefined" into a function
-      // keep required stuff in the front of your argument and optional stuff at the end
-      // there's generally a better way to do this that we will maybe learn later
-
-      // there should be a coherant idea around grouping your function's logic
-      // functions describe an idea/thought about about your manipulation does
-      // start breaking things down into thoughts
+        // keep required stuff in the front of your argument and optional stuff at the end
+        // there's generally a better way to do this that we will maybe learn later
