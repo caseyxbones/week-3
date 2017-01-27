@@ -36,8 +36,8 @@
       var banana = {"taste": "boring", "color": "red"};
         // you would think you could set apple equal to banana
         // but you can't. so don't.
-        // banana === apple will return false
-        // banana === banana will return true
+        banana === apple; // will return false
+        banana === banana; // will return true
 
 // FUNCTIONS
 

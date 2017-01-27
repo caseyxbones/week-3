@@ -64,15 +64,17 @@ Instructions: "Write a function which counts the number of times a value occurs 
 Example: "countItem(['a', 'b', 'a'], 'a') should return 2"
 ===================== */
 
-var countItem = function([arrayOne], numCount) {
-  var count = 0;
-  for (i=0; i<arrayOne.length; i++) {
-    if (arrayOne[i] === numCount)
-    {return (count + 1);
+var countItem = function(array1, specificNum) {
+  var t = 0;
+  for (i=0; i<array1.length; i++) {
+    if (array1[i] === specificNum)
+    { (t = t + 1);
     } else {
-      return (count + 0);
+      (t = t + 0);
     }
   }
+  return(t);
 };
 
-console.log('countItem success:', countItem([1, 2, 3, 4, 5, 4, 4], 4) === 3);
+
+console.log('countItem success:', countItem([1,2,3,4,5,4,4], 4) === 3);
