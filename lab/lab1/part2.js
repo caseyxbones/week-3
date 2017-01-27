@@ -28,8 +28,8 @@ Instructions: Write a function that *always* returns false.
               Use functions "justOne" and "isEven" somehow in the definition.
 ===================== */
 
-var justFalse = function(z) {
-  return()
+var justFalse = function(t) {
+  return(t = false);
 };
 
 console.log('justFalse success:', justFalse() === false);

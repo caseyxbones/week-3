@@ -73,7 +73,6 @@ var countItem = function([arrayOne], numCount) {
       return (count + 0);
     }
   }
-
 };
 
 console.log('countItem success:', countItem([1, 2, 3, 4, 5, 4, 4], 4) === 3);

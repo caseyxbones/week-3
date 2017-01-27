@@ -14,28 +14,28 @@
 
   // Mock user input
   // Filter out according to these zip codes:
-  var acceptedZipcodes = [19106, 19107, 19124, 19111, 19118];
+  var acceptedZipcodes = [19106, 19107, 19124, 19111, 19118]; //pretending someone entered this - cr
   // Filter according to enrollment that is greater than this variable:
-  var minEnrollment = 300;
+  var minEnrollment = 300; //pretending someone entered this - cr
 
 
   // clean the data
-  for (var i = 0; i < schools.length - 1; i++) {
+  for (var i = 0; i < schools.length; i++) {
     // If we have '19104 - 1234', splitting and taking the first (0th) element
     // as an integer should yield a zip in the format above
     if (typeof schools[i].ZIPCODE === 'string') {
       var split = schools[i].ZIPCODE.split(' ');
       var normalized_zip = parseInt(split[0]);
-      schools[i].ZIPCODE = normalized_zip;
+      schools[i].ZIPCODE = normalized_zip; // reset the zipcode value to be the cleaned zip code interger
     }
 
     // Check out the use of typeof here — this was not a contrived example.
     // Someone actually messed up the data entry.
-    if (typeof schools[i].GRADE_ORG === 'number') {
-      schools[i].HAS_KINDERGARTEN = schools[i].GRADE_LEVEL < 1;
-      schools[i].HAS_ELEMENTARY = 1 < schools[i].GRADE_LEVEL < 6;
-      schools[i].HAS_MIDDLE_SCHOOL = 5 < schools[i].GRADE_LEVEL < 9;
-      schools[i].HAS_HIGH_SCHOOL = 8 < schools[i].GRADE_LEVEL < 13;
+    if (typeof schools[i].GRADE_ORG === 'number') { // check to see if the grade_org is a number before anything else
+      schools[i].HAS_KINDERGARTEN = schools[i].GRADE_LEVEL < 1; // this will evaluate as true or false
+      schools[i].HAS_ELEMENTARY = 1 < schools[i].GRADE_LEVEL < 6; // this will evaluate as true or false
+      schools[i].HAS_MIDDLE_SCHOOL = 5 < schools[i].GRADE_LEVEL < 9; // this will evaluate as true or false
+      schools[i].HAS_HIGH_SCHOOL = 8 < schools[i].GRADE_LEVEL < 13; // this will evaluate as true or false
     } else {
       schools[i].HAS_KINDERGARTEN = schools[i].GRADE_LEVEL.toUpperCase().indexOf('K') >= 0;
       schools[i].HAS_ELEMENTARY = schools[i].GRADE_LEVEL.toUpperCase().indexOf('ELEM') >= 0;
@@ -47,7 +47,7 @@
   // filter data
   var filtered_data = [];
   var filtered_out = [];
-  for (var i = 0; i < schools.length - 1; i++) {
+  for (var i = 0; i < schools.length; i++) {
     // These really should be predicates!
     isOpen = schools[i].ACTIVE.toUpperCase() == 'OPEN';
     isPublic = (schools[i].TYPE.toUpperCase() !== 'CHARTER' ||
@@ -74,7 +74,7 @@
 
   // main loop
   var color;
-  for (var i = 0; i < filtered_data.length - 1; i++) {
+  for (var i = 0; i < filtered_data.length; i++) {
     isOpen = filtered_data[i].ACTIVE.toUpperCase() == 'OPEN';
     isPublic = (filtered_data[i].TYPE.toUpperCase() !== 'CHARTER' ||
                 filtered_data[i].TYPE.toUpperCase() !== 'PRIVATE');

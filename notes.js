@@ -64,3 +64,45 @@
       // don't write code that passes "undefined" into a function
         // keep required stuff in the front of your argument and optional stuff at the end
         // there's generally a better way to do this that we will maybe learn later
+
+        console.log("aBc" === "Abc"); // will return false
+        console.log("abc".toUpperCase === "Abc".toUpperCase); // will return true
+
+
+// UNDERSCORE LIBRARY
+
+        // Libraries are pre-wrotten code (mostly functions) like leaflet
+        // There are thousands of different libraries that do lots of different things
+        // Namespace: L,_,$
+            // L. is the namespace for leaflet
+            // a Namespace defines which library you're using in case multiple libraries have the same call, like (map)
+
+        // Underscore has utility functions that cause common problems
+        // is much more readable than pure javascript
+            // example:
+        // _.max([2,4,10,7]) will return 10 as the maximum value in that array
+
+// _.each
+
+        // each expects an array (list) and then iterates a specified function over all of the elements in the
+        // provided list.
+
+        _.each(Array, Function); // will run Function on each object in Array
+
+        // In this example, pretent that var myLocations is an array with location information inside of it
+        // this will place markers on a map for all of the locations in the array myLocations:
+        var mapSomething = function(place) {
+          L.marker([place.lat, place.lng]).addTo(map);
+        };
+        _.each(myLocations, mapSomething);
+
+
+//_.map
+
+        // Any time you want to apply a cleaning function to your data you can use map to map that data
+        // over an array and end up with an array of clean data
+
+        anArray = [1,4,6];
+        _.map(anArray, function(val) {
+          return val + 5;
+        });
