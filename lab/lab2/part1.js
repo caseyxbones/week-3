@@ -18,7 +18,7 @@ console.log('Nathan\'s list', nathanGameList);
 What is the first game in Jeff's list?
 ===================== */
 
-var query1;
+var query1 = _.first(jeffGameList);
 
 console.log('What is the first game in Jeff\'s list?', query1);
 

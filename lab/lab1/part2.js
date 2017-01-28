@@ -65,7 +65,7 @@ NOTE: We expect an error until this function is written properly!
 var filterOutLessThan10 = function(array) {
     var newArr1 = [];
     for (i=0; i < array.length;i++){
-      if (array[i] >= 10) {
+      if (array[i] > 10) {
         newArr1.push(array[i]);
       }
     }

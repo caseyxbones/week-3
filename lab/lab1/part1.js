@@ -64,12 +64,16 @@ Instructions: "Write a function which counts the number of times a value occurs 
 Example: "countItem(['a', 'b', 'a'], 'a') should return 2"
 ===================== */
 
+
+
 var countItem = function(array1, specificNum) {
-  var t = 0;
+  var t = 0;                                    // try to use more descriptive variable names to remember what things are
   for (i=0; i<array1.length; i++) {
-    if (array1[i] === specificNum)
-    { (t = t + 1);
-    } else {
+    var selectedElement = array1[i];            // creating this variable will make it easier to read functions later when theyre more complex
+    if (selectedElement === specificNum) {      // pay attention to formatting for readability
+      (t = t + 1);
+    }
+    else {                                     // this else is optional, we could remove it and the outcome wouldn't change for this exercise
       (t = t + 0);
     }
   }

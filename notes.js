@@ -106,3 +106,21 @@
         _.map(anArray, function(val) {
           return val + 5;
         });
+
+
+// Meeting with Jeff
+
+      // If you're stuck, post to Gitter.
+      // Try "pseudo coding" beforwe actually coding --> write out tasks to articulate your ideas
+      // and then try coding those ideas. That can help with the logic.
+
+      // Re: syntax --> don't freak out about not having everything memorized
+      // Google is your friend, use it.
+
+      // Web-based mentorship stuff, talk to JD at Haverford, meeting with Jeff and Nathan
+
+      // Re: throwing out data for the sake of coding --> this class is not about data ethics, but they are important
+      // By the end of using Underscore you should be able to take dirty data like the data in week-2 lab1 and do
+      // whatever you want with it.
+
+      // 
