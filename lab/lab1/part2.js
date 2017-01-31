@@ -82,8 +82,8 @@ Instructions: Let's bring it all together. Write a function that returns only od
               2. a function that takes a number and returns true or false (isOdd, let's say)
 ===================== */
 
-var filter = function(array, func) {
-
+var filter = function(i) {
+  if (i%2 === 0);
 };
 
 console.log('filter success:', filter([4, 11], isOdd) === [11]);
