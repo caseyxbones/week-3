@@ -74,6 +74,8 @@ console.log('Which games are owned by both Jeff and Nathan', query7);
 Which games are exclusive to collections? In other words, only owned by either Jeff or Nathan.
 ===================== */
 
-var query8 = _.difference(jeffGameList, nathanGameList);
+var query8 = _.difference(jeffGameList, nathanGameList); // difference depends on the order so yuou have to do it twice
+var query8b = _.difference(nathanGameList, jeffGameList);
+var query9 = _.union(query8, query8b); // this will create a complete list of games that are unique to one list or the other
 
-console.log('Which games are exclusive to one collection? In other words, only owned by either Jeff or Nathan (but not both!).', query8);
+console.log('Which games are exclusive to one collection? In other words, only owned by either Jeff or Nathan (but not both!).', query9);
