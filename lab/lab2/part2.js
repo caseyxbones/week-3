@@ -19,19 +19,19 @@ _.each(myArray, function(value, key, list) {
 });
 ===================== */
 
-var filterOutLessThan20 = function(array) {
-    // var newArr1 = [];
-    for (i=0; i < array.length;i++){
-      // if (array[i] > 20) {
-      //   // newArr1.push(array[i]);
-      // }
-    // }
-    // return(newArr1);
+// var lessThan20 = function();
+
+var fizzBuzzFunction = function(item){
+if (item%3 === 0 && item%5 === 0)
+     { console.log('FizzBuzz');
+   } else if (item%5 === 0) {
+      console.log('Buzz');
+    } else if (item%3 === 0) {
+      console.log('Fizz');
+    } else {console.log(item);
     }
 };
 
+var array = [1,2,3,4,5,6,7,8,9,10];
 
-
-
-var test = filterOutLessThan10([4, 11]).length === 1 && filterOutLessThan10([4, 11])[0] === 11;
-console.log('filterOutLessThan10 success:', test);
+_.each(array,fizzBuzzFunction);

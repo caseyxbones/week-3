@@ -21,8 +21,9 @@ Using underscore functions, generate a list of all bike share docks that are gre
 Let's say we only care about the final count of bike share locations with more than 20 docks. Calculate the value by using _.countBy and set your answer to variable "largeStationCount".
 ===================== */
 
+
 var data = bikeArrayClean;
 
-var largeStationList = ;
+var largeStationList = ();
 
 var largeStationCount;
