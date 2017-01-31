@@ -18,3 +18,20 @@ _.each(myArray, function(value, key, list) {
   console.log(value, key, list);
 });
 ===================== */
+
+var filterOutLessThan20 = function(array) {
+    // var newArr1 = [];
+    for (i=0; i < array.length;i++){
+      // if (array[i] > 20) {
+      //   // newArr1.push(array[i]);
+      // }
+    // }
+    // return(newArr1);
+    }
+};
+
+
+
+
+var test = filterOutLessThan10([4, 11]).length === 1 && filterOutLessThan10([4, 11])[0] === 11;
+console.log('filterOutLessThan10 success:', test);

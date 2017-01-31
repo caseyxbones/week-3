@@ -23,6 +23,6 @@ Let's say we only care about the final count of bike share locations with more t
 
 var data = bikeArrayClean;
 
-var largeStationList;
+var largeStationList = ;
 
 var largeStationCount;
